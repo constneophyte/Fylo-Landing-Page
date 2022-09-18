@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+
+     body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: #fff;
+            color: black;
+            font-size: 15px;
+            line-height: 1.5;
+     }
+
+     li {
+       list-style-type: none;
+     }
+
+     li:hover {
+       border-bottom: 1px solid hsl(243, 87%, 12%);
+     }
+     
+     a {
+       text-decoration: none;
+     }
+
+     .container {
+       width: 90%;
+       max-width: 1100px;
+       margin: auto;
+     }
+
+     nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 20px;
+     }
+
+     nav img {
+       width: 100px;
+     }
+
+     .navBar ul{
+       display: flex;
+       gap: 40px;
+       color; hsl(243, 87%, 12%);
+     }
+     
+     ul a {
+       color: hsl(243, 87%, 12%); 
+     }
+     
+     .header h1 {
+       font-size: 35px;
+       color: hsl(243, 87%, 12%);
+       margin-bottom: 10px;
+       line-height: 1.2;
+     }
+
+     .header p {
+       width: 80%;
+       font-size: 17px;
+       color: hsl(238, 22%, 44%);
+       margin-bottom: 20px;
+     }
+
+     .container .headSection {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       margin-top: 40px;
+       justify-content: space-between;
+       align-items: center;
+
+     }
+
+     .headSection img {
+       width: 100%;
+     }
+
+     input[type = "email"] {
+       padding-block: 10px;
+       padding-inline-start: 10px;
+       padding-inline-end: 20px;
+       border: 1px solid black;
+     }
+     
+     input[type = "submit"] {
+       color: white;
+       padding: 12px 20px;
+       margin-left: 5px;
+       background-color: hsl(224, 93%, 58%);
+       border: none;
+       border-radius: 5px;
+     }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="logo.svg" alt="Fylo Logo">
+      <div class="navBar">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">SignIn</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class = "headSection">
+      <div class = "header grid">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <form action="" class = "headerForm">
+          <input type="email" name="Email" placeholder = "Enter Your Email Address" required>
+          <input type="submit" value="Get Started">
+        </form>
+      </div>
+      <img src="illustration-1.svg" alt="">
+    </section>
+  </div>
+  
+<!-- </p>
+  Get Started
+
+  Stay productive, wherever you are
+
+  Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+
+  See how Fylo works
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy -->
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+</html>

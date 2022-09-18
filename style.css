@@ -1,0 +1,388 @@
+
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+    
+     body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: #fff;
+            color: black;
+            font-size: 15px;
+            line-height: 1.5;
+     }
+
+     li {
+       list-style-type: none;
+     }
+
+     .navBar ul li:hover {
+       border-bottom: 1px solid hsl(243, 87%, 12%);
+     }
+
+     a {
+       text-decoration: none;
+     }
+
+     .container {
+       width: 90%;
+       max-width: 1100px;
+       margin: auto;
+     }
+
+     nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 30px;
+     }
+
+     .logo {
+       width: 100px;
+     }
+
+     .navBar ul{
+       display: flex;
+       gap: 40px;
+     }
+     
+     .navBar ul input {
+       display: none;
+     }
+     
+     .navBar > ul > li > a {
+       color: hsl(243, 87%, 12%);
+     }
+
+     h1 {
+       font-size: 35px;
+       color: hsl(243, 87%, 12%);
+       margin-bottom: 10px;
+       line-height: 1.2;
+     }
+
+     .header p {
+       width: 80%;
+       font-size: 17px;
+       color: hsl(238, 22%, 44%);
+       margin-bottom: 20px;
+     }
+
+     .container .headSection {
+       display: flex;
+       flex-direction: row-reverse;
+       margin-top: 100px;
+       justify-content: space-between;
+       align-items: center;
+     }
+
+     .headSection img {
+       width: 320px;
+     }
+
+     input[type = "email"] {
+       padding-block: 10px;
+       padding-inline-start: 10px;
+       padding-inline-end: 20px;
+       border-radius: 5px;
+       border: 1px solid;
+     }
+
+     input[type = "submit"] {
+       color: white;
+       padding: 11px 30px;
+       /*margin-left: 5px;*/
+       background-color: hsl(224, 93%, 58%);
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+     }
+
+     input[type = "submit"]:focus {
+       transform: scale(0.98);
+     }
+
+     .testimonialSec {
+       background: url(bg-curve-desktop.svg) no-repeat center center/cover;
+       margin-top: 100px;
+     }
+
+     .testimonialSec .container {
+       display: flex;
+       flex-direction: row-reverse;
+       padding-top: 100px;
+       justify-content: space-between;
+       align-items: center;
+       gap: 40px;
+     }
+
+     .testimonialSec .meet {
+       width: 320px;
+     }
+
+     .testimonialDiv h1 {
+       font-size: 31px;
+       margin-bottom: 30px;
+     }
+
+     .testimonialDiv p {
+       width: 80%;
+       margin-bottom: 20px;
+       line-height: 1.2;
+       color:hsl(243, 87%, 12%);
+     }
+     
+     .fyloHow a {
+       color: hsl(170, 45%, 43%);
+       border-bottom: 1px solid;
+       padding-bottom: 2px;
+     }
+
+     .testimonial {
+       background: white;
+       box-shadow: 0px 0px 5px grey;
+       border-radius: 3px;
+       padding: 30px;
+       width: 300px;
+       height: 200px;
+       margin-top: 50px;
+       margin-bottom: 100px;
+     }
+
+     .testimonial > img {
+       width: 15px;
+     }
+
+     .testimonial > p {
+       line-height: 1.5;
+       width: 100%;
+       font-size: 13px;
+     }
+
+     .profile {
+       display: flex;
+       gap: 10px;
+       justify-content: start;
+       align-items: center;
+     }
+
+     .profile > img {
+       width: 30px;
+       height: 30px;
+       border-radius: 30px;
+     }
+
+     .profile div > h1 {
+       font-size: 12px;
+       margin: 0;
+       padding: 0;
+     }
+
+     .profile div > p {
+       width: 100%;
+       font-size: 10px;
+       margin: 0;
+     }
+
+     .signUp {
+       background: hsl(238, 22%, 44%);
+       padding-block: 70px;
+     }
+
+     .signUp .container {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       align-items: center;
+     }
+
+     .earlyAccess h1 {
+       color: white;
+       margin-bottom: 20px;
+     }
+
+     .earlyAccess p {
+       width: 400px;
+       color: hsl(240, 75%, 98%);
+     }
+     
+     .signForm form {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       justify-content: start;
+     }
+
+     .signForm input[type = "submit"] {
+       align-self: start;
+       margin: 0;
+       border-radius: 3px;
+     }
+
+     .bottomLinks {
+       background: hsl(243, 87%, 12%);
+       padding-block: 60px;
+     }
+
+     .bottomLinks .container section ul li {
+       margin-bottom: 10px;
+     }
+     
+     .iconCont li {
+       display: flex;
+       align-items: center;
+       gap: 10px;
+     }
+
+     .iconCont li a {
+       color: white;
+     }
+
+     footer {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       margin-top: 20px;
+     }
+
+     footer a {
+       color: white;
+     }
+
+     footer a:hover {
+       color:hsl(238, 22%, 44%);
+     }
+
+     .iconCont .icons {
+       width: 15px;
+     }
+     
+    @media (max-width: 700px) {
+       .logo {
+         width: 80px;
+       }
+       
+       .navBar ul li {
+         display: none;
+       }
+       
+       .navBar ul input {
+         color: white;
+         display: block;
+         padding: 10px 20px;
+         background-color: hsl(224, 93%, 58%);
+         border-bottom: 0px;
+         border-radius: 5px;
+       }
+       
+       .navBar ul input {
+         color: white;
+       }
+       
+       .navBar ul input:hover {
+         transform: scale(0.95);
+         outline-color: white;
+       }
+       
+       .container .headSection{
+         display: block;
+         text-align: center;
+       }
+     
+      .container .headSection h1 {
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 1.4;
+      }
+      
+      .container .headSection p {
+        width: 97%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      
+      .headerForm {
+        display: grid;
+        gap: 15px;
+      }
+      
+      .headerForm input[type = "submit"] {
+        padding-block: 13px;
+      }
+      
+      .testimonialSec .container {
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+      
+      .testimonialDiv h1 {
+        font-size: 18px;
+        margin-top: 90px;
+      }
+      
+      .testimonialDiv p {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      .fyloHow {
+        text-align: center !important;
+      }
+      
+      .testimonial {
+        margin-inline: 10px;
+        text-align: left;
+      }
+      
+      .signUp .container {
+        display: block;
+        text-align: center;
+      }
+      
+      .earlyAccess h1 {
+        font-size: 22px;
+      }
+      
+      .earlyAccess p {
+        font-size: 13px;
+        width: 100%;
+      }
+      
+      .signForm form {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      
+      .signForm form input {
+        border: none;
+        border-radius: 2px;
+        
+        width: 100%;
+        text-align: center;
+      }
+      
+      .signForm form input::placeholder {
+      
+      }
+      footer {
+        grid-template-columns: 1fr;
+      }
+      
+      .bottomLinks {
+        padding-block: 30px;
+      }
+      .bottomLinks .container section ul li {
+       margin-bottom: 20px;
+     }
+     
+     input[type = "submit"]:focus {
+       transition: scale(0.95);
+       outline: none;
+     }
+     }
